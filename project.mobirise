@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2023-12-24 14:44",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://shibaswap-co.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://shibaswap-co.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "8x3xyqcrir",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Shibaswap™ | Home Official Site",
+        "meta_descr": "NFTS. Buy, Sell and Trade 10,000 unique Shiboshis. Unique and only available on ShibaSwap. You do not want to miss this unique NFT drop!",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://shiba-swap.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/shibaswap.png\" alt=\"Shibaswap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZlxHC9ByH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://shibaswap-co.github.io/\" class=\"text-primary\">Shibaswap</a>™| Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://shibaswap.com/#/\" class=\"text-primary\">ShibaSwap</a>: Navigating the Decentralized Canine-Themed DeFi Landscape</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the dynamic world of decentralized finance (DeFi), ShibaSwap has emerged as a unique and intriguing player, capturing the attention of crypto enthusiasts with its canine-themed branding and innovative approach to decentralized exchanges. Born out of the Shiba Inu ecosystem, ShibaSwap brings a fresh perspective to the decentralized finance space. In this article, we will explore the origins, key features, and the impact of ShibaSwap on the DeFi landscape.\n<br>\n<br>The Genesis of ShibaSwap\n<br>\n<br>ShibaSwap made its debut in the crypto space as an integral part of the Shiba Inu ecosystem, a project that gained notoriety for its playful dog-inspired branding and its aim to create a decentralized community around the Shiba token. Launched as a decentralized exchange (DEX), ShibaSwap became one of the components of the Shiba Inu ecosystem, offering users the opportunity to trade and provide liquidity in a canine-themed environment.\n<br>\n<br>Key Features of ShibaSwap\n<br>\n<br>Three-Token Ecosystem:\n<br>ShibaSwap operates within a three-token ecosystem, comprising SHIB, LEASH, and BONE. SHIB is the native utility token and the primary token in the ShibaSwap ecosystem. LEASH, a rebase token pegged to the price of Dogecoin, and BONE, the governance token, complete the trio. This multi-token system adds layers of functionality and engagement within the ShibaSwap platform.\n<br>\n<br>Decentralized Governance with BONE:\n<br>BONE, the governance token of ShibaSwap, plays a crucial role in the decision-making processes of the platform. Holders of BONE have the ability to propose and vote on changes to the protocol, contributing to a decentralized governance model. This empowers the community to actively participate in shaping the future of ShibaSwap.\n<br>\n<br>Liquidity Pools and Farming:\n<br>ShibaSwap encourages users to contribute liquidity to the platform by participating in liquidity pools and farming. Liquidity providers stake their assets in these pools and, in return, earn rewards in the form of SHIB, LEASH, or BONE tokens. This mechanism incentivizes users to contribute to the liquidity of the platform, enhancing the overall trading experience.\n<br>\n<br>Canine-Themed Interface:\n<br>Staying true to its Shiba Inu roots, ShibaSwap features a canine-themed interface that adds a playful and distinctive touch to the decentralized exchange experience. The platform incorporates graphics, images, and language that resonate with the Shiba Inu community, creating a unique atmosphere for users.\n<br>\n<br>Ethereum Blockchain Integration:\n<br>ShibaSwap operates on the Ethereum blockchain, leveraging the network's established infrastructure and widespread adoption. Users can interact with ShibaSwap using popular Ethereum wallets, providing a familiar experience for those accustomed to the Ethereum ecosystem.\n<br>\n<br>ShibaSwap's Impact on Decentralized Finance\n<br>\n<br>Community Engagement and Branding:\n<br>ShibaSwap has successfully harnessed the power of community engagement through its canine-themed branding and playful approach. The Shiba Inu community, known for its enthusiasm and dedication, has actively participated in ShibaSwap's ecosystem, contributing to the platform's growth and fostering a strong sense of community.\n<br>\n<br>Innovative Tokenomics:\n<br>The three-token ecosystem of SHIB, LEASH, and BONE introduces innovative tokenomics within ShibaSwap. Each token serves a distinct purpose, creating a dynamic and interconnected system. This multi-token approach enhances user engagement, providing various avenues for participation, from trading and staking to governance.\n<br>\n<br>Decentralized Governance Model:\n<br>ShibaSwap's decentralized governance model, facilitated by the BONE token, aligns with the broader ethos of decentralized finance. The ability for community members to propose and vote on changes fosters a sense of ownership and collective decision-making, contributing to a more inclusive and community-driven platform.\n<br>\n<br>Liquidity Provision and Farming Incentives:\n<br>The liquidity pools and farming mechanisms on ShibaSwap incentivize users to contribute to the liquidity of the platform. This not only enhances the overall trading experience by reducing slippage but also aligns with the broader trend in DeFi of encouraging users to actively participate in the ecosystem.\n<br>\n<br>Playful User Experience:\n<br>The canine-themed interface of ShibaSwap adds a playful and lighthearted element to the user experience. By incorporating elements from the Shiba Inu meme culture, the platform has created a distinctive environment that resonates with its community, fostering a sense of camaraderie among users.\n<br>\n<br>Challenges and Considerations\n<br>\n<br>While ShibaSwap has garnered attention and a dedicated community, it is not without challenges and considerations:\n<br>\n<br>Smart Contract Risks:\n<br>As with any decentralized finance platform, the reliance on smart contracts introduces potential risks. Vulnerabilities or bugs in the smart contracts could be exploited, leading to security breaches. Regular audits and ongoing efforts to address vulnerabilities are crucial for maintaining the security of user funds.\n<br>\n<br>Market Volatility:\n<br>The cryptocurrency market is known for its inherent volatility. The value of tokens within the ShibaSwap ecosystem, such as SHIB and LEASH, can experience significant fluctuations. Users should be aware of the potential for price volatility and carefully consider their risk tolerance when participating in the ecosystem.\n<br>\n<br>Regulatory Considerations:\n<br>The regulatory landscape surrounding decentralized finance is evolving, and ShibaSwap, like other DeFi projects, may face regulatory scrutiny. Staying informed about regulatory developments and taking measures to ensure compliance will be essential for the long-term sustainability of the platform.\n<br>\n<br>Competition within DeFi:\n<br>The decentralized finance space is highly competitive, with numerous projects vying for user attention. ShibaSwap must navigate this competitive landscape and continue to innovate to differentiate itself and attract users in a rapidly evolving market.\n<br>\n<br>The Future of ShibaSwap\n<br>\n<br>As ShibaSwap looks ahead, several factors may shape its future within the decentralized finance ecosystem:\n<br>\n<br>Cross-Chain Integration:\n<br>Exploring cross-chain integration could broaden ShibaSwap's reach beyond the Ethereum blockchain. Integrating with other blockchain networks could enhance the platform's scalability and provide users with additional options for trading and liquidity provision.\n<br>\n<br>Enhanced Governance Features:\n<br>Continued development and enhancement of the governance features facilitated by the BONE token may further empower the community. Implementing additional governance mechanisms and fine-tuning existing structures could contribute to a more robust and effective decentralized decision-making process.\n<br>\n<br>Innovative Token Offerings:\n<br>The ShibaSwap ecosystem may introduce new and innovative token offerings, expanding beyond the existing SHIB, LEASH, and BONE tokens. Introducing new tokens or features that capture the interest of the community can contribute to the platform's growth and engagement.\n<br>\n<br>Community-Driven Development:\n<br>Maintaining a strong focus on community-driven development is likely to be a key aspect of ShibaSwap's future. Encouraging active participation, gathering community feedback, and implementing features based on user preferences can foster a sense of community ownership and loyalty.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZlxIsk3JP",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
